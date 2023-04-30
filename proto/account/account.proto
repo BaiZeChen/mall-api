@@ -1,0 +1,13 @@
+syntax = "proto3";
+package account;
+option go_package = "github.com/BaiZeChen/mall-api/proto/account";
+import "proto/common/common.proto";
+
+message Account {
+  string Name = 1;
+  string Password = 2;
+}
+
+service AccountService {
+  rpc CreateAccount(Account) returns (common.Response);
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+package common;
+option go_package = "github.com/BaiZeChen/mall-api/proto/common";
+
+enum ResponseStatus {
+  Success = 0;
+  Error = 1;
+}
+
+message Response {
+  ResponseStatus code = 1;
+  string msg = 2;
+}
