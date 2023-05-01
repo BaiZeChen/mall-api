@@ -1,6 +1,7 @@
 syntax = "proto3";
 package common;
 option go_package = "github.com/BaiZeChen/mall-api/proto/common";
+import "google/protobuf/any.proto";
 
 enum ResponseStatus {
   Success = 0;
@@ -10,4 +11,5 @@ enum ResponseStatus {
 message Response {
   ResponseStatus code = 1;
   string msg = 2;
+  google.protobuf.Any data = 3;
 }
