@@ -27,4 +27,5 @@ service AccountService {
   rpc UpdateAccountName(ReqUpdateAccountName) returns (common.Response);
   rpc UpdateAccountPassword(ReqUpdateAccountPassword) returns (common.Response);
   rpc DeleteAccount(ReqDelAccount) returns (common.Response);
+  rpc AccountList(ReqAccountList) returns (common.Response);
 }

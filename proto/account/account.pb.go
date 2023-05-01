@@ -308,7 +308,7 @@ var file_proto_account_account_proto_rawDesc = []byte{
 	0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x04, 0x4e, 0x61, 0x6d, 0x65, 0x12, 0x16, 0x0a,
 	0x06, 0x6f, 0x66, 0x66, 0x73, 0x65, 0x74, 0x18, 0x02, 0x20, 0x01, 0x28, 0x0d, 0x52, 0x06, 0x6f,
 	0x66, 0x66, 0x73, 0x65, 0x74, 0x12, 0x14, 0x0a, 0x05, 0x4c, 0x69, 0x6d, 0x69, 0x74, 0x18, 0x03,
-	0x20, 0x01, 0x28, 0x0d, 0x52, 0x05, 0x4c, 0x69, 0x6d, 0x69, 0x74, 0x32, 0x9a, 0x02, 0x0a, 0x0e,
+	0x20, 0x01, 0x28, 0x0d, 0x52, 0x05, 0x4c, 0x69, 0x6d, 0x69, 0x74, 0x32, 0xd4, 0x02, 0x0a, 0x0e,
 	0x41, 0x63, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x12, 0x39,
 	0x0a, 0x0d, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x41, 0x63, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x12,
 	0x16, 0x2e, 0x61, 0x63, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x2e, 0x52, 0x65, 0x71, 0x41, 0x64, 0x64,
@@ -326,10 +326,14 @@ var file_proto_account_account_proto_rawDesc = []byte{
 	0x0d, 0x44, 0x65, 0x6c, 0x65, 0x74, 0x65, 0x41, 0x63, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x12, 0x16,
 	0x2e, 0x61, 0x63, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x2e, 0x52, 0x65, 0x71, 0x44, 0x65, 0x6c, 0x41,
 	0x63, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x1a, 0x10, 0x2e, 0x63, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x2e,
-	0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x42, 0x2d, 0x5a, 0x2b, 0x67, 0x69, 0x74, 0x68,
-	0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x42, 0x61, 0x69, 0x5a, 0x65, 0x43, 0x68, 0x65, 0x6e,
-	0x2f, 0x6d, 0x61, 0x6c, 0x6c, 0x2d, 0x61, 0x70, 0x69, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2f,
-	0x61, 0x63, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x38, 0x0a, 0x0b, 0x41, 0x63, 0x63, 0x6f,
+	0x75, 0x6e, 0x74, 0x4c, 0x69, 0x73, 0x74, 0x12, 0x17, 0x2e, 0x61, 0x63, 0x63, 0x6f, 0x75, 0x6e,
+	0x74, 0x2e, 0x52, 0x65, 0x71, 0x41, 0x63, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x4c, 0x69, 0x73, 0x74,
+	0x1a, 0x10, 0x2e, 0x63, 0x6f, 0x6d, 0x6d, 0x6f, 0x6e, 0x2e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e,
+	0x73, 0x65, 0x42, 0x2d, 0x5a, 0x2b, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d,
+	0x2f, 0x42, 0x61, 0x69, 0x5a, 0x65, 0x43, 0x68, 0x65, 0x6e, 0x2f, 0x6d, 0x61, 0x6c, 0x6c, 0x2d,
+	0x61, 0x70, 0x69, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2f, 0x61, 0x63, 0x63, 0x6f, 0x75, 0x6e,
+	0x74, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -358,12 +362,14 @@ var file_proto_account_account_proto_depIdxs = []int32{
 	1, // 1: account.AccountService.UpdateAccountName:input_type -> account.ReqUpdateAccountName
 	2, // 2: account.AccountService.UpdateAccountPassword:input_type -> account.ReqUpdateAccountPassword
 	3, // 3: account.AccountService.DeleteAccount:input_type -> account.ReqDelAccount
-	5, // 4: account.AccountService.CreateAccount:output_type -> common.Response
-	5, // 5: account.AccountService.UpdateAccountName:output_type -> common.Response
-	5, // 6: account.AccountService.UpdateAccountPassword:output_type -> common.Response
-	5, // 7: account.AccountService.DeleteAccount:output_type -> common.Response
-	4, // [4:8] is the sub-list for method output_type
-	0, // [0:4] is the sub-list for method input_type
+	4, // 4: account.AccountService.AccountList:input_type -> account.ReqAccountList
+	5, // 5: account.AccountService.CreateAccount:output_type -> common.Response
+	5, // 6: account.AccountService.UpdateAccountName:output_type -> common.Response
+	5, // 7: account.AccountService.UpdateAccountPassword:output_type -> common.Response
+	5, // 8: account.AccountService.DeleteAccount:output_type -> common.Response
+	5, // 9: account.AccountService.AccountList:output_type -> common.Response
+	5, // [5:10] is the sub-list for method output_type
+	0, // [0:5] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name
@@ -472,6 +478,7 @@ type AccountServiceClient interface {
 	UpdateAccountName(ctx context.Context, in *ReqUpdateAccountName, opts ...grpc.CallOption) (*common.Response, error)
 	UpdateAccountPassword(ctx context.Context, in *ReqUpdateAccountPassword, opts ...grpc.CallOption) (*common.Response, error)
 	DeleteAccount(ctx context.Context, in *ReqDelAccount, opts ...grpc.CallOption) (*common.Response, error)
+	AccountList(ctx context.Context, in *ReqAccountList, opts ...grpc.CallOption) (*common.Response, error)
 }
 
 type accountServiceClient struct {
@@ -518,12 +525,22 @@ func (c *accountServiceClient) DeleteAccount(ctx context.Context, in *ReqDelAcco
 	return out, nil
 }
 
+func (c *accountServiceClient) AccountList(ctx context.Context, in *ReqAccountList, opts ...grpc.CallOption) (*common.Response, error) {
+	out := new(common.Response)
+	err := c.cc.Invoke(ctx, "/account.AccountService/AccountList", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // AccountServiceServer is the server API for AccountService service.
 type AccountServiceServer interface {
 	CreateAccount(context.Context, *ReqAddAccount) (*common.Response, error)
 	UpdateAccountName(context.Context, *ReqUpdateAccountName) (*common.Response, error)
 	UpdateAccountPassword(context.Context, *ReqUpdateAccountPassword) (*common.Response, error)
 	DeleteAccount(context.Context, *ReqDelAccount) (*common.Response, error)
+	AccountList(context.Context, *ReqAccountList) (*common.Response, error)
 }
 
 // UnimplementedAccountServiceServer can be embedded to have forward compatible implementations.
@@ -541,6 +558,9 @@ func (*UnimplementedAccountServiceServer) UpdateAccountPassword(context.Context,
 }
 func (*UnimplementedAccountServiceServer) DeleteAccount(context.Context, *ReqDelAccount) (*common.Response, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method DeleteAccount not implemented")
+}
+func (*UnimplementedAccountServiceServer) AccountList(context.Context, *ReqAccountList) (*common.Response, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method AccountList not implemented")
 }
 
 func RegisterAccountServiceServer(s *grpc.Server, srv AccountServiceServer) {
@@ -619,6 +639,24 @@ func _AccountService_DeleteAccount_Handler(srv interface{}, ctx context.Context,
 	return interceptor(ctx, in, info, handler)
 }
 
+func _AccountService_AccountList_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(ReqAccountList)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(AccountServiceServer).AccountList(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/account.AccountService/AccountList",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(AccountServiceServer).AccountList(ctx, req.(*ReqAccountList))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 var _AccountService_serviceDesc = grpc.ServiceDesc{
 	ServiceName: "account.AccountService",
 	HandlerType: (*AccountServiceServer)(nil),
@@ -638,6 +676,10 @@ var _AccountService_serviceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "DeleteAccount",
 			Handler:    _AccountService_DeleteAccount_Handler,
+		},
+		{
+			MethodName: "AccountList",
+			Handler:    _AccountService_AccountList_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
