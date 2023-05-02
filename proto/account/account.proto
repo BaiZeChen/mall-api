@@ -1,7 +1,7 @@
 syntax = "proto3";
 package account;
 option go_package = "github.com/BaiZeChen/mall-api/proto/account";
-import "proto/common/common.proto";
+import "google/protobuf/empty.proto";
 
 message ReqAddAccount {
   string Name = 1;
@@ -21,11 +21,21 @@ message ReqAccountList {
   uint32 offset = 2;
   uint32 Limit = 3;
 }
+message Account {
+  uint32 Id = 1;
+  string Name = 2;
+  uint64 CreateTime = 3;
+  uint64 UpdateTime = 4;
+}
+message List {
+  repeated Account Data = 1;
+  uint32 Count = 2;
+}
 
 service AccountService {
-  rpc CreateAccount(ReqAddAccount) returns (common.Response);
-  rpc UpdateAccountName(ReqUpdateAccountName) returns (common.Response);
-  rpc UpdateAccountPassword(ReqUpdateAccountPassword) returns (common.Response);
-  rpc DeleteAccount(ReqDelAccount) returns (common.Response);
-  rpc AccountList(ReqAccountList) returns (common.Response);
+  rpc CreateAccount(ReqAddAccount) returns (google.protobuf.Empty);
+  rpc UpdateAccountName(ReqUpdateAccountName) returns (google.protobuf.Empty);
+  rpc UpdateAccountPassword(ReqUpdateAccountPassword) returns (google.protobuf.Empty);
+  rpc DeleteAccount(ReqDelAccount) returns (google.protobuf.Empty);
+  rpc AccountList(ReqAccountList) returns (List);
 }
