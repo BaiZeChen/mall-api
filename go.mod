@@ -1,6 +1,6 @@
 module github.com/BaiZeChen/mall-api
 
-go 1.17
+go 1.20
 
 require (
 	google.golang.org/grpc v1.54.0

@@ -8,10 +8,12 @@ message ReqAddAccount {
   string Password = 2;
 }
 message ReqUpdateAccountName {
-  string Name = 1;
+  uint32 Id = 1;
+  string Name = 2;
 }
 message ReqUpdateAccountPassword {
-  string Password = 1;
+  uint32 Id = 1;
+  string Password = 2;
 }
 message ReqDelAccount {
   uint32 Id = 1;
