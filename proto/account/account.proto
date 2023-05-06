@@ -33,8 +33,12 @@ message List {
   repeated Account Data = 1;
   uint32 Count = 2;
 }
+message RespToken {
+  string Token = 1;
+}
 
 service AccountService {
+  rpc Login(ReqAddAccount) returns (RespToken);
   rpc CreateAccount(ReqAddAccount) returns (google.protobuf.Empty);
   rpc UpdateAccountName(ReqUpdateAccountName) returns (google.protobuf.Empty);
   rpc UpdateAccountPassword(ReqUpdateAccountPassword) returns (google.protobuf.Empty);
