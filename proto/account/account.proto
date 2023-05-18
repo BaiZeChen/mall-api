@@ -37,6 +37,13 @@ message RespToken {
   string Token = 1;
 }
 
+message StreamRequest {
+  string questions = 1;
+}
+message StreamResponse {
+  string answer = 1;
+}
+
 service AccountService {
   rpc Login(ReqAddAccount) returns (RespToken);
   rpc CreateAccount(ReqAddAccount) returns (google.protobuf.Empty);
@@ -44,4 +51,8 @@ service AccountService {
   rpc UpdateAccountPassword(ReqUpdateAccountPassword) returns (google.protobuf.Empty);
   rpc DeleteAccount(ReqDelAccount) returns (google.protobuf.Empty);
   rpc AccountList(ReqAccountList) returns (List);
+}
+
+service StreamService {
+  rpc QAndA(StreamRequest) returns (stream StreamResponse) {};
 }
